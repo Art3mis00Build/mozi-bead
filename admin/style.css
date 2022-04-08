@@ -1,0 +1,204 @@
+@font-face {font-family: "Maven"; src: url("./assets/fonts/MavenPro-VariableFont_wght.ttf");}
+
+*{
+    margin: 0;
+    color: white;
+    padding: 0;
+}
+
+body{
+    background-color: #2c3e50;
+    font-family: 'Maven', Courier, monospace;
+    overflow: hidden;
+}
+
+.head{
+    background-color: #34495e;
+}
+
+.head img{
+    width: 5%;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 89vh;
+}
+
+.nav{
+    background-color: #34495e;
+    height: 100%;
+}
+
+.navbar{
+    list-style: none;
+}
+
+.navbar li:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.navbar li{
+    width: 100%;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav li:hover{
+    color: black;
+    background-color: #16a085;
+    cursor: pointer;
+}
+
+.content{
+    height: 95%;
+    width: 100%;
+    margin: 15px;
+    background-color: #34495e;
+    border-radius: 10px;
+}
+
+.stat{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.stat div:not(:last-child){
+    margin-right: 10px;
+}
+
+.box{
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    height: 25vh;
+    text-align: center;
+}
+
+.box h2{
+    font-size: 4em;
+}
+
+.num{
+    font-size: 8em;
+}
+
+.all-res{
+    background: rgb(241,196,15);
+background: linear-gradient(176deg, rgba(241,196,15,1) 0%, rgba(243,156,18,1) 35%, rgba(211,84,0,1) 100%);
+}
+
+.week-res{
+    background: rgb(26,188,156);
+background: linear-gradient(176deg, rgba(26,188,156,1) 0%, rgba(46,204,113,1) 35%, rgba(39,174,96,1) 100%);
+}
+
+.today-res{
+    background: rgb(52,152,219);
+    background: linear-gradient(176deg, rgba(52,152,219,1) 0%, rgba(155,89,182,1) 73%, rgba(142,68,173,1) 100%); 
+}
+
+table{
+    border-spacing: 0.5rem;
+}
+
+td,th{
+    font-size: 24px;
+    background-color: #7f8c8d;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    color: black;
+}
+
+input{
+    color: black;
+}
+
+.form-field{
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+}
+
+.form-field input{
+    font-size: 64px;
+    width: 100%;
+}
+
+.form-field button{
+    font-size: 32px;
+    float: right;
+    margin-top: 20px;
+}
+
+.today-films{
+    background-color: #2c3e50;
+    width: 50%;
+    height: 50vh;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.today-films table{
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.last-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.foglalas{
+    display: flex;
+    flex-direction: row;
+}
+
+.vetitesek{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.chairs{
+    display: grid;
+    grid-template-columns: repeat(9,0.5fr);
+    text-align: center;
+    grid-gap: 10px;
+    width: 50%;
+}
+
+.chair{
+    border-radius: 10px;
+}
+
+.chair:hover{
+    cursor: pointer;
+}
+
+.foglalt{
+    background-color: red;
+    pointer-events: auto;
+}
+
+.szabad{
+    background-color: green;
+}
