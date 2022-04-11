@@ -2,9 +2,9 @@ var api_url = "http://localhost/mozi/api/get/getAllVetites.php";
 
 //Székek generálása
 function GenChairs(e){
-    console.log(e.target.id);
     $('.chairs').empty();
     $.getJSON("http://localhost/mozi/api/get/getAllCustById.php?id="+e.target.id, function(data){
+        console.log(data)
         var x = 0
         for (let i = 1; i <= 10; i++) {
             for (let j = 1; j <= 9; j++) {
@@ -22,7 +22,6 @@ function GenChairs(e){
                     ).attr('sor',i).attr('oszlop',j).attr('id',e.target.id).attr('fogid',"0").appendTo('.chairs');
                 }
             }
-            
         }
     });
 }
@@ -73,8 +72,9 @@ $(document).on('click','.chair.foglalt', function(e){
     $.post("http://localhost/mozi/api/post/CustomerDelete.php", tmp,function(rep){
         console.log("Üzenet:",rep);
     });
-    jQuery(this).attr('class',"chair szabad");
-    jQuery(this).attr('fogid',"0");
+    //jQuery(this).attr('class',"chair szabad");
+    //jQuery(this).attr('fogid',"0");
+    GenChairs(e);
 });
 
 //Vetítések gombja generálása API-ról

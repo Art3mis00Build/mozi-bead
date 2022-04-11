@@ -1,5 +1,4 @@
 <?php
-    
     include "../model/database.php";
 
     if(isset($_POST)){

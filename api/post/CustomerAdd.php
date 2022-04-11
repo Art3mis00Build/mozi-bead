@@ -9,7 +9,7 @@
         $oszlop = json_decode($_POST['oszlop'], true);
 
         $sql = "INSERT INTO foglalas (vetitesid, foglalonev, foglaloemail, sor, oszlop)
-        VALUES ('".$id."', 'Kacsa', 'Manual', '".$sor."', '".$oszlop."')";
+        VALUES ('".$id."', 'Manual', 'Manual', '".$sor."', '".$oszlop."')";
         $stmt = $conn->prepare($sql);
         $stmt->execute();
         echo($conn->lastInsertId());
