@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="428px" height="428px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 428 428" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g>
+		<g>
+			<path fill="#E31E24" fill-rule="nonzero" d="M214 428c118,0 214,-96 214,-214 0,-118 -96,-214 -214,-214 -118,0 -214,96 -214,214 0,118 96,214 214,214z"/>
+			<path fill="#2B2A29" fill-rule="nonzero" d="M215 43c-95,0 -171,76 -171,171 0,94 76,171 171,171 94,0 171,-77 171,-171 0,-95 -77,-171 -171,-171zm0 42l0 0c71,0 128,58 128,129 0,71 -57,128 -128,128 -71,0 -129,-57 -129,-128 0,-71 58,-129 129,-129z"/>
+			<path fill="#2B2A29" fill-rule="nonzero" d="M153 178l-9 0c-9,0 -13,-7 -13,-14 0,-6 4,-13 13,-13l23 0c7,0 15,3 15,14l0 97c0,10 -6,15 -15,15 -8,0 -14,-5 -14,-15l0 -84 0 0z"/>
+			<path fill="#2B2A29" fill-rule="nonzero" d="M243 198c6,0 12,-6 12,-12 0,-7 -6,-12 -12,-12 -7,0 -13,5 -13,12 0,6 6,12 13,12zm0 54l0 0c9,0 16,-7 16,-17 0,-9 -7,-16 -16,-16 -10,0 -17,7 -17,16 0,10 7,17 17,17zm40 -68l0 0c0,12 -7,21 -11,24 11,7 16,19 16,30 0,23 -18,41 -45,41 -28,0 -46,-18 -46,-41 0,-11 5,-23 17,-30 -5,-3 -12,-12 -12,-24 0,-24 19,-36 41,-36 21,0 40,12 40,36z"/>
+		</g>
+	</g>
+</svg>

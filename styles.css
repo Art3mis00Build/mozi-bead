@@ -1,0 +1,303 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.meta img{
+    width: 30px;
+}
+.navbar{
+    background: rgb(5,167,217);
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    top: 0;
+    z-index: 999;
+}
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.navbar_menu{
+    margin-top: 1cm;
+    list-style: none;
+}
+.navbar_container h2{
+    display: grid;
+    color: white;
+    font-size: 1.2rem;
+}
+.navbar_container h3{
+    display: grid;
+    color: white;
+    font-size: 1rem;
+}
+#navbar_logo{
+    background-size: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    cursor: pointer;
+    width: 30%;
+    max-width: 100%;
+}
+.navbar_links{
+    color: rgb(255, 255, 255);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration:none;
+    padding:0 1rem;
+    height: 100%;
+}
+.navbar_links:hover{
+    color: black;
+    transition: 0.5 s ease;
+}
+.\n{
+    width: 2cm;
+}
+.movie-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1cm auto 0 auto;
+}
+.poster img{
+    width: 200px;
+    margin-right: 0.5cm;
+}
+.main_container-bufe{
+    display: grid;
+    max-width: 960px;
+    margin: auto;
+    margin: 1cm auto 1cm auto;
+}
+table{
+    border-style: solid;
+}
+.row{
+    background-color: rgb(190, 190, 190);
+}
+.movie-box{
+    display: flex;   
+}
+.description{
+    width: 420px;
+}
+.swiper-outer{
+    display: flex;
+    font-size: 1rem;
+}
+.swiper-outer img{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 150px;
+}
+.prev,.next{
+    float: left;
+    margin-top: 130px;
+    cursor: pointer;
+}
+.prev{
+    position: relative;
+    margin-right: -45px;
+    z-index: 100;
+}
+.next{
+    position: relative;
+    margin-left: -45px;
+    z-index: 100;
+}
+.swiper-inner{
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+}
+.swiper-inner img{
+    width: 150px;
+    justify-content: center;
+    margin: auto;
+    display: none;
+    text-align: center;
+}
+.swiper-inner img.active{
+    display: inline-block;
+}
+.main{
+    border-top-style: solid;
+}
+.main_content-genre{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(122, 116, 116);
+}
+.main_content{
+    display: grid;
+    padding: 1cm 0cm 1cm 5cm;
+    background-color: rgb(122, 116, 116);
+}
+.main_content-genre button{
+    justify-content: center;
+    width: 3cm;
+    height: 1cm;
+    text-decoration: none;
+    border-style: none;
+    background-color: rgb(122, 116, 116);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.main_content-genre a{
+    border-left-style: solid;
+    border-left-width: 0.5mm;
+    color: black;
+    cursor:auto;
+}
+.main_content-genre button:hover{
+    background-color: white;
+    transition: 0.5s ease;
+}
+.main_content-movies{
+    display: grid;
+    grid-template-columns: 700px 700px;
+    margin: auto;
+    justify-content: center;
+    height: auto;
+}
+.main_content-movies section{
+    justify-self: center;
+    text-align: center;
+    margin-top: 1cm;
+}
+.main_content-movies section h3{
+    font-size: 1rem;
+}
+.main-foglalo h1{
+    display: grid;
+    justify-content: center;
+}
+.main_container-foglalo{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+.readmore{
+    cursor: pointer;
+    font-size: 2.2vh;
+}
+#movie_pic{
+    height: 300px;
+}
+#granola{
+    width: 10%;
+    height: 10%;
+}
+#popcorn{
+    width: 10%;
+}
+#joker{
+    justify-self: left;
+    position: relative;;
+    height: 350px;
+    margin: 0 auto 0 auto;
+}
+.jegy-main_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.jegy-main_content a{
+    justify-content: center;
+    margin: 0 auto 0 auto;
+}
+#jegy-pic{
+    height: 300px;
+}
+.footer_container{
+    background-color: grey;
+    margin-top: 1cm;
+    padding: 5rem 0;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.footer_container h1{
+    font-size: 1rem;
+}
+.footer_links{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+.footer_link--wrapper{
+    display: flex;
+}
+.footer_link-items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.footer_link-items h2{
+    margin-bottom: 16px;
+}
+.footer_link-items h2{
+    color: #fff;
+    border-left-style: solid;
+    border-left-color: rgb(5,167,217);
+    padding-left: 5px;
+}
+.footer_link-items a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+.footer_link-items a:hover{
+    color: #e9e9e9;
+    transition: 0.3 ease-out;
+}
+
+.btn-foglalt{
+    background-color: red;
+}
+
+.btn-szabad{
+    background-color: green;
+    color: #e9e9e9;
+}
+
+.helyfoglalo_tabla{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(9,0.5fr);
+    text-align: center;
+    width: 25%;
+    grid-gap: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.helyfoglalo_tabla button{
+    width: 0.5cm;
+    height: 0.5cm;
+}

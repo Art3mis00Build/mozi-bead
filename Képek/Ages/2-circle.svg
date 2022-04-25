@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="428px" height="428px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 428 428" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<g>
+		<g>
+			<path fill="#FECC00" fill-rule="nonzero" d="M214 428c118,0 214,-96 214,-214 0,-118 -96,-214 -214,-214 -118,0 -214,96 -214,214 0,118 96,214 214,214z"/>
+			<path fill="#2B2A29" fill-rule="nonzero" d="M215 43c-95,0 -171,76 -171,171 0,94 76,171 171,171 94,0 171,-77 171,-171 0,-95 -77,-171 -171,-171zm0 42l0 0c71,0 128,58 128,129 0,71 -57,128 -128,128 -71,0 -129,-57 -129,-128 0,-71 58,-129 129,-129z"/>
+			<path fill="#2B2A29" fill-rule="nonzero" d="M213 247c9,0 16,-7 16,-16 0,-8 -7,-16 -16,-16 -8,0 -16,8 -16,16 0,9 8,16 16,16zm-20 -73l0 0c21,-27 25,-30 32,-30 10,0 14,9 14,14 0,9 -14,16 -27,35l1 0c2,0 5,-1 11,-1 20,0 35,19 35,39 0,25 -19,44 -46,44 -27,0 -45,-18 -45,-43 0,-23 12,-43 25,-58l0 0z"/>
+		</g>
+	</g>
+</svg>
