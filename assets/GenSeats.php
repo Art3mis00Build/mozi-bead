@@ -38,7 +38,7 @@
           echo("<a class='btn-foglalt'>{$i}-{$j}</a>");
         }
         else{
-          echo("<a href='./ossz.php?id={$vetid}&sor={$i}&oszlop={$j}' class='btn-szabad'>{$i}-{$j}</a>");
+          echo("<a href='./ossz.php?id={$vetid}&sor={$i}&oszlop={$j}&filmid={$filmid}&datum={$datum}' class='btn-szabad'>{$i}-{$j}</a>");
         }
       }
     }

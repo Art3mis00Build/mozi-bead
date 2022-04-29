@@ -60,12 +60,14 @@
                 <a href="/"><button>Szombat</button></a>
                 <a href="/"><button>Vasárnap</button></a>
             </div>
-                            <div class="main_content-movies">
-                                <?php include "./assets/GetFilmTime.php"?>
+                            <div class="imain_content-movies">
+                                <?php include "./assets/GenIMainFilm.php"?>
+                                <div class="imain_content-movies-vetitesek">
+                                    <?php include "./assets/GetFilmTime.php"?>
+                                </div>
                                     </div>
 					            </div>
                             </div>                
-       
     </div>
     <div class="footer_container">
     <img src="Képek/card-payment.png" alt="">

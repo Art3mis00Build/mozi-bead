@@ -3,8 +3,35 @@
         $id = $_GET['id'];
         $sor = $_GET['sor'];
         $oszlop = $_GET['oszlop'];
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "mozi";
+        $title = "";
+        $datum = "";
+
+        //Csatlakozás létrehozása
+        $conn = mysqli_connect($servername, $username, $password, $dbname);
+        $filmid = $_GET['filmid'];
+        $datum = $_GET['datum'];
+        //Csatlakozás elelnőrzése
+        if (!$conn) {
+        die("Hiba: " . mysqli_connect_error());
+        }
+        
+        $sql = "SELECT * FROM film WHERE filmid = {$filmid}";
+        $result = mysqli_query($conn, $sql);
+        
+        if(mysqli_num_rows($result) > 0) {
+            while($row = mysqli_fetch_assoc($result)) {
+                $title = $row['nev'];
+            }
+        }
+        
+        mysqli_close($conn);
     }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,9 +81,9 @@
     </nav>
     </nav>
     <div class="main-foglalo">
-    <h1>CÍM</h1>
+    <h1><?php echo($title);?></h1>
     <div class="main_container-foglalo">
-    <h2>Vetítő</h2>
+    <h2><?php echo($datum);?></h2>
         <div class="container">
             <?php 
                 echo("<form action='./assets/PostSeat.php?id={$id}&sor={$sor}&oszlop={$oszlop}' method='post'>");

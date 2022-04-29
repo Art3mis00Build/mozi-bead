@@ -13,15 +13,21 @@
         die("Hiba: " . mysqli_connect_error());
         }
         
-        $sql = "SELECT * FROM vetitites WHERE filmid = {$filmid}";
+        $sql = "SELECT * FROM film WHERE filmid = {$filmid}";
         $result = mysqli_query($conn, $sql);
         
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
-                echo("<a movie-playlist href='./foglalo.php?id={$row['vetitesid']}&filmid={$filmid}&datum={$row['datum']}'>{$row['datum']}</a>");
+                echo("<div class='imain_content-movies-poster'>
+                <h1>{$row['nev']}</h1>
+                    <img src='{$row['poster']}' id='idopont_poster' alt='pic'>
+                </div>
+                <div class='imain_content-movies-description'>
+                    <h2>{$row['info']}</h2>
+                </div>");
             }
         } else {
-            echo "0 results";
+            echo "";
         }
         
         mysqli_close($conn);
