@@ -7,7 +7,7 @@
         $id = $_GET["id"];
 
         //SQL lekérdezés elkészítése
-        $sql = "UPDATE film SET nev='{$_POST['nev']}', premier = '{$_POST['premier']}', mufaj = '{$_POST['mufaj']}', info ='{$_POST['info']}' WHERE filmid={$id}";
+        $sql = "UPDATE film SET nev='{$_POST['nev']}', premier = '{$_POST['premier']}', mufaj = '{$_POST['mufaj']}', info ='{$_POST['info']}', poster='{$_POST['poster']}' WHERE filmid={$id}";
         $stmt = $conn->prepare($sql);
         $stmt->execute();
 

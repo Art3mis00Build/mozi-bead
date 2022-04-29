@@ -34,6 +34,7 @@
                        <th>Premier</th>
                        <th>Műfaj</th>
                        <th>Leírás</th>
+                       <th>Poster</th>
                        <th>Művelet</th>
                     </tr>
                     <?php 
@@ -46,12 +47,14 @@
                     
                         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         foreach($result as $item){
+                            $poster = substr($item['poster'],0,15)."...";
                             echo("<tr><td>{$item['filmid']}</td>
                                         <td>{$item['nev']}</td>
                                         <td>{$item['premier']}</td>
                                         <td>{$item['mufaj']}</td>
                                         <td>{$item['info']}</td>
-                                        <td><a href='./controller/modify.php?id={$item['filmid']}'><button>Szerkesztés</button></a>
+                                        <td>{$poster}</td>
+                                        <td class='operators'><a href='./controller/modify.php?id={$item['filmid']}'><button>Szerkesztés</button></a>
                                         <a href='../api/post/FilmDelete.php?id={$item['filmid']}'><button>Törlés</button></a></td>
                                         </tr>");
                         }

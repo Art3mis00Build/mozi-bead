@@ -121,6 +121,13 @@ td,th{
 .table{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.operators{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 button{
@@ -134,7 +141,7 @@ input{
 .form-field{
     display: flex;
     justify-content: center;
-    font-size: 64px;
+    font-size: 48px;
 }
 
 .form-field input{
@@ -176,6 +183,22 @@ input{
     display: flex;
     flex-direction: column;
     width: 20%;
+}
+
+.vetitesek button{
+    color: wheat;
+    background-color: #0a3d62;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.vetitesek button:hover{
+    color: #0a3d62;
+    background-color: wheat;
+    cursor: pointer;
 }
 
 .chairs{

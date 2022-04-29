@@ -31,7 +31,6 @@ function TodayData(){
     });
 }
 
-
 //Gyűjtemény
 function Collection(){
     refreshMain();
@@ -39,10 +38,8 @@ function Collection(){
 }
 
 $(document).ready(function(){
-   
-});
-
-//15 másodpercenként frissíti az adatokat
-$(function(){
-    setInterval(Collection(), 7000);
+    //10 másodpercenként frissíti az adatokat
+    $(function(){
+        setInterval(Collection(), 10000);
+    });
 });

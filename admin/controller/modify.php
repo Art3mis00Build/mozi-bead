@@ -39,9 +39,9 @@
     <div class="container">
         <div class="nav">
             <ul class="navbar">
-                <li class="navbar-item"><a href="./index.html">Főoldal</a></li>
-                <li class="navbar-item"><a href="">Filmek</a></li>
-                <li class="navbar-item"><a href="">Foglalások</a></li>
+            <li class="navbar-item"><a href="../index.html">Főoldal</a></li>
+                <li class="navbar-item"><a href="../films.php">Filmek</a></li>
+                <li class="navbar-item"><a href="../foglalas.html">Foglalás</a></li>
                 <li class="navbar-item"><a href="">Statisztika</a></li>
                 <li class="navbar-item"><a href="">Büfe</a></li>
             </ul>
@@ -55,6 +55,7 @@
                    <label for="premier">Premier:</label><input type="date" name="premier" id="premier" value="<?php echo($result[0]['premier']);?>"><br>
                    <label for="mufaj">Műfaj:</label><input type="text" name="mufaj" id="mufaj" value="<?php echo($result[0]['mufaj']);?>"><br>
                    <label for="info">Leírás:</label><input type="text" name="info" id="info" value="<?php echo($result[0]['info']);?>"><br>
+                   <label for="poster">Pószter:</label><input type="text" name="poster" id="poster" value="<?php echo($result[0]['poster']);?>"><br>
                    <button type="submit">Kész</button>
                </form>
             </div>
